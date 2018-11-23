@@ -27,9 +27,10 @@
 \LoadClass{extarticle}
 
 % Fonts and language
-\RequirePackage[utf8]{inputenc}
-\RequirePackage[english]{babel}
 \RequirePackage{amsmath,amsfonts,amssymb}
+\RequirePackage{polski}
+\RequirePackage[polish]{babel}
+\RequirePackage[utf8]{inputenc}
 \RequirePackage{mathpazo} % Widely available alternative to Garamond
 \RequirePackage[scaled]{helvet}
 \RequirePackage[T1]{fontenc}
