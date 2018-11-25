@@ -256,8 +256,9 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
   \vskip8pt%
 }
 \noindent
-\parbox{\dimexpr\linewidth}{%
-\@doi%
+\parbox{\dimexpr\linewidth}
+{%
+%\@doi%
 }%
 \hfil\rule{\linewidth}{.4pt}
 }
@@ -325,4 +326,4 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
 \setboolean{minireview}{false}
 \setboolean{displaycopyright}{true}
 \doi{\url{http://dx.doi.org/10.1364/optica.XX.XXXXXX}}
-\dates{Compiled \today}
+\dates{Copywright \today}

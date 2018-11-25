@@ -2,17 +2,18 @@
 \setboolean{shortarticle}{false}
 \setboolean{minireview}{false}
 
-\title{Legacy \LaTeX\ template for preparing an article for submission to \emph{Optica}}
+\title{Projektowanie geometrii sensorów piezoelektrycznych - elektryczna odpowiedź elemenu piezoelektrycznego na wymuszenie mechaniczne}%Licznik piezoelektryczny
 
-\author[1,2,3]{Author One}
-\author[2,*]{Author Two}
-\author[1]{Author Three}
+\author[1,*]{Jan Szymenderski}
+\author[2,**]{Przemysław Sałapata}
 
-\affil[1]{Publications Department, The Optical Society, 2010 Massachusetts Avenue NW, Washington DC, 20036, USA}
-\affil[2]{School of Science, University of Technology, 2000 J St. NW, Washington DC, 20036, USA}
-\affil[3]{School of Optics, University of Technology, 2000 J St. NW, Washington DC, 20036, USA}
+\affil[1]{Politechnika Poznańska, Wydział Elektryczny, pl. Marii Skłodowskiej-Curie 5, 60-965 Poznań}
+%\affil[2]{School of Science, University of Technology, 2000 J St. NW, Washington DC, 20036, USA}
+%\affil[3]{School of Optics, University of Technology, 2000 J St. NW, Washington DC, 20036, USA}
 
-\affil[*]{Corresponding author: email@my-email.com}
+\affil[*]{e-mail: jan.szymenderski@put.poznan.pl}
+\affil[**]{e-mail: przemyslaw.salapata@student.put.poznan.pl}
+
 
 % To be edited by editor
 % \dates{Compiled \today}
@@ -23,42 +24,53 @@
 % \doi{\url{http://dx.doi.org/10.1364/optica.XX.XXXXXX}}
 
 \begin{abstract}
-This legacy \LaTeX\ template can be used to prepare a research article or a short article for submission to \emph{Optica}. Select \texttt{$\setminus$setboolean\{shortarticle\}\{false\}} for a research article or \texttt{$\setminus$setboolean\{shortarticle\}\{true\}} for a letter or memorandum. Select \texttt{$\setminus$setboolean\{minireview\}\{true\}} to output a header identifying the paper as a Mini-Review. Authors may use this legacy template for a precise length estimate for \emph{Optica} letters and memoranda. Please note that OSA is no longer using OCIS codes.
+Do napisania streszczenie artykułu.
+%Tutaj streszczenie
 \end{abstract}
 
-\setboolean{displaycopyright}{true}
+\setboolean{displaycopyright}{false} %wyśiwetla info o copywrithingu pod abstractem
 
 \begin{document}
 
 \maketitle
 
-\section{Introduction}
+\section{Wprowadzenie}
 
-This legacy template is designed to assist with creating a two-column research article or letter to submit to \emph{Optica}. See the OSA's \href{http://www.opticsinfobase.org/submit/style/}{Style Guide} and \href{http://www.opticsinfobase.org/submit/templates/}{Manuscript Templates} pages for more details.
+TODO
+Do napisania wprowadzenie. Zjawisko piezoelektryczne. Artykuł ma pokazać metodykę projektowania sensorów na konkretnym przykładzie.
 
-If you have a question while using this template on \href{https://www.overleaf.com}{Overleaf}, please use the help menu (``?'') on the top bar to search for help or ask us a question using the option in the lower right of the editor.
+\href{http://www.google.com}{przykład linka Google}
 
-\section{Examples of Article Components}
+\section{Założenia prowadzonych badań}
 \label{sec:examples}
 
-The sections below show examples of different article components. Sections should generally follow the conventional order: Introduction, Method, Results, Discussion, and Conclusion.  Please do not include Methods in a separate section at the end.
+%\subsection{Wymagania konstrukcyjne}
+Źródłem wymuszeń mechanicznych są owalne ciała (bryły sztywne) o masie $m_s=0.03\div1.10 g$ poruszające się torem ruchu przedstawionym na \ref{fig:route}. Tor wykonany jest ze stalowej rury i w obszarze A (patrz: \ref{fig:route}) następuje sprężysty kontakt ze ścianą toru. Należy nadmienić, że w obszar A uderza 98\% poruszających się ciał. W odrębnych badaniach ustalono również, że prędkość ciała w momencie kontaktu wynosi $v_s=3.0\div7.0$ $\frac{m}{s}$. Wymuszenia mogą pojawiać się minmalnie w odstępach $T_{smin}=TODO$.
 
-\section{Figures and Tables}
+\begin{figure}[htbp]
+\centering
+\fbox{TUTAJ RYSUNEK TORU RUCHU ZIARNA}%\includegraphics[width=\linewidth]{sample}}
+\caption{Zakładany tor lotu ciała fizycznego}
+\label{fig:route}
+\end{figure}
+
+Założono, że miejscem montażu przetwornika jest obszar A na \ref{fig:route}, który stanowi okrąg o średnicy $d_p=TODO mm$. Dodatkowo promień ugięcia płaszczyzny A wynosi $R_A=TODOmm$, a kąt padania ciała na tę powierzchnię $\delta_p=135^{\circ}$. 
+
+Tak ściśle i ciekawie przedstawione założenia stały się dobrym punktem wyjścia do szerzej rozumianych badań. Artykuł na naszkicowanym już przykładzie ukazuje zależność odpowiedzi elektrycznej wybranych przetworników PVDF z energią wymuszenia mechanicznego a przede wszystkim kostrukcją (zwaną także geometrią) układu.
+
+\section{Metodyka badań} %workflow
+
+\section{Stanowisko badawcze}
+
+\section{Selekcja czujnika}
+\section{Optymalizacja układu geometrycznego}
+%\section{Wyznaczenie charakterystyk}
+\section{Podsumowanie}
+
 
 It is not necessary to place figures and tables at the back of the manuscript. Figures and tables should be sized as they are to appear in the final article. Do not include a separate list of figure captions and table titles.
 
 Figures and Tables should be labeled and referenced in the standard way using the \verb|\label{}| and \verb|\ref{}| commands.
-
-\subsection{Sample Figure}
-
-Figure \ref{fig:false-color} shows an example figure.
-
-\begin{figure}[htbp]
-\centering
-\fbox{\includegraphics[width=\linewidth]{sample}}
-\caption{False-color image, where each pixel is assigned to one of seven reference spectra.}
-\label{fig:false-color}
-\end{figure}
 
 \subsection{Sample Table}
 
