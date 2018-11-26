@@ -2,6 +2,10 @@
 \setboolean{shortarticle}{false}
 \setboolean{minireview}{false}
 
+
+\usepackage{verbatim}
+\usepackage{smartdiagram}
+
 \title{Projektowanie geometrii sensorów piezoelektrycznych - elektryczna odpowiedź elemenu piezoelektrycznego na wymuszenie mechaniczne}%Licznik piezoelektryczny
 
 \author[1,*]{Jan Szymenderski}
@@ -42,7 +46,7 @@ Do napisania wprowadzenie. Zjawisko piezoelektryczne. Artykuł ma pokazać metod
 \href{http://www.google.com}{przykład linka Google}
 
 \section{Założenia prowadzonych badań}
-\label{sec:examples}
+\label{sec:assumptions}
 
 %\subsection{Wymagania konstrukcyjne}
 Źródłem wymuszeń mechanicznych są owalne ciała (bryły sztywne) o masie $m_s=0.03\div1.10 g$ poruszające się torem ruchu przedstawionym na \ref{fig:route}. Tor wykonany jest ze stalowej rury i w obszarze A (patrz: \ref{fig:route}) następuje sprężysty kontakt ze ścianą toru. Należy nadmienić, że w obszar A uderza 98\% poruszających się ciał. W odrębnych badaniach ustalono również, że prędkość ciała w momencie kontaktu wynosi $v_s=3.0\div7.0$ $\frac{m}{s}$. Wymuszenia mogą pojawiać się minmalnie w odstępach $T_{smin}=TODO$.
@@ -58,19 +62,54 @@ Założono, że miejscem montażu przetwornika jest obszar A na \ref{fig:route},
 
 Tak ściśle i ciekawie przedstawione założenia stały się dobrym punktem wyjścia do szerzej rozumianych badań. Artykuł na naszkicowanym już przykładzie ukazuje zależność odpowiedzi elektrycznej wybranych przetworników PVDF z energią wymuszenia mechanicznego a przede wszystkim kostrukcją (zwaną także geometrią) układu.
 
-\section{Metodyka badań} %workflow
+\section{Metodyka badań}
+\label{sec:exp_methods}
+Jednym z najważniejszych aspektów badań było ich zaprojektowanie. Tu najlepiej sprawdza się metoda burzy mózgów. Można rzec, że była ona nieodłącznym elementem każdego etapu badań. Na \ref{fig:workflow} przedstawiono efekt prac nad sposobem realizacji celu eksperymentów. Ważniejszym etapom poświęcono osobny akapit artykułu. Natomiast niewymagającym komentarza przypisano krótkie wyjaśnienie.
+
+\begin{figure}[htbp]
+\centering
+\smartdiagramset{back arrow disabled=true}
+\smartdiagram[descriptive diagram]{
+{Założenia, Ustalenie założeń konstrukcyjnych czujnika},
+{Analiza, Separacja założeń mających wpływ na badany układ. },
+{Stanowisko, Budowa układu pozwalającego na odizolowanie czynników zewnętrznych oraz zapewniającego odpowiednią regulację energii zderzenia.(patrz: \ref{sec:test_stand})},
+{Czujniki, Wybór zestawu i rodzaju przetworników do badań.},
+{Selekcja czujnika, Badania prowadzące do wyboru optymalnego czujnika.(patrz: \ref{sec:sensor_selection})},
+{Optymalizacja układu, Eksperymenty prowadzące do optymalizacji przestrzennego wyglądu czujnika. Kontrola czujników odrzuconych w kroku poprzednim i ewentualny powrót do kroku poprzedniego. (patrz: \ref{sec:construction_optymization})},
+{Analiza, Analiza pozyskanych danych.(patrz: \ref{sec:conclusion})},
+}
+\caption{Infografika obrazująca metodykę prowadzonych badań.}
+\label{fig:workflow}
+\end{figure}
 
 \section{Stanowisko badawcze}
+\label{sec:test_stand}
+
+Stanowisko bada
+
+\begin{figure}[htbp]
+\centering
+\fbox{TUTAJ PROJEKT STANOWISKA}%\includegraphics[width=\linewidth]{sample}}
+\caption{Projekt stanowiska badawczego.}
+\label{fig:test_stand}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\fbox{TUTAJ ZDJĘCIE STANOWISKA}%\includegraphics[width=\linewidth]{sample}}
+\caption{Realizacja stanowiska badawczego.}
+\label{fig:test_stand_photo}
+\end{figure}
 
 \section{Selekcja czujnika}
+\label{sec:sensor_selection}
+
 \section{Optymalizacja układu geometrycznego}
+\label{sec:construction_optymization}
 %\section{Wyznaczenie charakterystyk}
 \section{Podsumowanie}
+\label{sec:conclusion}
 
-
-It is not necessary to place figures and tables at the back of the manuscript. Figures and tables should be sized as they are to appear in the final article. Do not include a separate list of figure captions and table titles.
-
-Figures and Tables should be labeled and referenced in the standard way using the \verb|\label{}| and \verb|\ref{}| commands.
 
 \subsection{Sample Table}
 

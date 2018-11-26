@@ -78,7 +78,7 @@
                 letterpaper,twoside]{geometry}%
 \RequirePackage[labelfont={bf,sf},%
                 labelsep=period,%
-                figurename=Fig.,%
+                figurename=Rys.,%
                 singlelinecheck=off,%
                 justification=RaggedRight]{caption}
 \setlength{\columnsep}{24pt} % Distance between the two columns of text
