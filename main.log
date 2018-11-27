@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.17)  26 NOV 2018 00:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.11.17)  27 NOV 2018 19:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1879,98 +1879,79 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <9> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <11> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 39.
+ (./introduction.tex
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 41.
+(Font)              scaled to size 9.49997pt on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 41.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 41.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <8> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 80.
+(Font)              scaled to size 9.49997pt on input line 1.
+) (./assumptions.tex) (./exp_methods.tex) (./test_stand.tex
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 7.
 
-
-LaTeX Warning: Reference `sec:conclusion' on page 1 undefined on input line 80.
-
-
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+))
+(./sensor_selection.tex) (./construction_optymization.tex) (./conclusion.tex)
+(./main.bbl) 
+AED: lastpage setting LastPage
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.64998pt on input line 126.
+(Font)              scaled to size 6.64998pt on input line 70.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
+] [2
+
 ]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 132.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 164.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Underfull \hbox (badness 2608) in paragraph at lines 164--165
-[]\T1/ppl/m/n/9 (+20) Note that let-ter sub-mis-sions to \T1/ppl/m/it/9 (+20) O
-ptica \T1/ppl/m/n/9 (+20) use an ab-bre-
- []
-
-
-Underfull \hbox (badness 1635) in paragraph at lines 164--165
-\T1/ppl/m/n/9 (+20) omit the ar-ticle ti-tle and fi-nal page num-ber; this ab-b
-re-
- []
-
-
-Underfull \hbox (badness 1048) in paragraph at lines 166--167
-\T1/ppl/m/n/9 (+20) must be in-c-lu-ded as well on an in-for-ma-tio-nal page th
-at
- []
-
-(./main.bbl) 
-AED: lastpage setting LastPage
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7DBA18B5E19253B3611928F8F1C0DF42;551.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
 
 
-LaTeX Warning: There were undefined references.
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 7DBA18B5E19253B3611928F8F1C0DF42;551
+(rerunfilecheck)             After:  96D174924471FEEAE6A6C071D260B016;388.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 40193 strings out of 492982
- 805555 string characters out of 6134895
- 956271 words of memory out of 5000000
- 43018 multiletter control sequences out of 15000+600000
- 613697 words of font info for 208 fonts, out of 8000000 for 9000
+ 40137 strings out of 492982
+ 804674 string characters out of 6134895
+ 955853 words of memory out of 5000000
+ 42989 multiletter control sequences out of 15000+600000
+ 605434 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,18n,73p,10413b,1072s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texliv
-e/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpaz
-o/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sftt0900.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palat
-ino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (2 pages, 150942 bytes).
+pdfTeX warning (dest): name{section.9} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.8} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helveti
+c/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (2 pages, 103777 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 55027 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 158 PDF objects out of 1000 (max. 8388607)
+ 118 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 45811 words of extra memory for PDF output out of 51595 (max. 10000000)
 
