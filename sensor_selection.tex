@@ -44,7 +44,24 @@ Dla każdego pomiaru przeprowadzono po 10 prób, i pozwoliło to zebrać poniżs
 \label{fig:sensor_sel_geometry}
 \end{figure}
 
-Na podstawie Rys.\ref{fig:sensor_sel_geometry} możemy stwierdzić, że najwyższą wartość uzyskanego napięcia $V_{pp}$ otrzymaliśmy dla czujnika oznaczonego numerem 1.2. Szacuje się, że wyższa wartość $V_{pp}$ będzie bradziej odporna na szumy pochodzące z maszyny, na której sensor byłby umieszczony. Zgodnie z założeniami przeznaczeniem sensora jest przecież licznik impulsów mechanicznych. Z dużym prawdopodobieństwem można uznać, że wyzwalanie licznika następować będzie na jednym ze zboczy pierwszej półfali lub np. wyprostowanej całej fali sygnału. 
-\ident Odnośnie czasu trwania sygnału jednoznacznie można stwierdzić, że im krótszy tym lepszy. Pozwala to na wyższą częstotliwość wymuszeń mechanicznych bez wystąpienia zjawiska aliasingu.
+Na podstawie Rys.\ref{fig:sensor_sel_geometry} możemy stwierdzić, że najwyższą wartość uzyskanego napięcia $V_{pp}$ otrzymaliśmy dla czujnika oznaczonego numerem \textbf{1.2.} Szacuje się, że wyższa wartość $V_{pp}$ będzie bradziej odporna na szumy pochodzące z maszyny, na której sensor byłby umieszczony. Zgodnie z założeniami przeznaczeniem sensora jest przecież licznik impulsów mechanicznych. Z dużym prawdopodobieństwem można uznać, że wyzwalanie licznika następować będzie na jednym ze zboczy pierwszej półfali lub np. wyprostowanej całej fali sygnału. 
+\ident Odnośnie czasu trwania sygnału jednoznacznie można stwierdzić, że im krótszy tym lepszy. Pozwala to na wyższą częstotliwość wymuszeń mechanicznych bez wystąpienia zjawiska aliasingu. Oczywiście zbyt krótki, o zbyt małej energii może być problematyczny do wychwycenia - będzie wymagać dużej częstotliwości próbkowania.
+\ident Podczas wykonywania pomiarów zauważono ciekawe zaleźności, o których warto wspomnieć przy okazji tego artykułu. Otóż zauważono zależność przebiegu sygnału wyjściowego od rozwiązań konstrukcyjnych zastosowanych w przetworniku. Tak na przykład różnica w zastosowaniu tłumika drgań w postaci gąbki objawia się przede wszystkim czasem trwania sygnału, inaczej mówiąc czasem tłumienia drgań. Jest to wniosek dość oczywisty, jednak warto o nim pamiętać konstruując przetworniki piezoelektryczne. Oprócz tłómików czy filtrów stricte elektrycznych są do dyspozycji również mechaniczne. Gwoli ścisłości w układzie z tłumikiem (patrz: Rys.\ref{fig:scope_with_silencer}) czas wygaszania sgnału wynosi $d_t = TODOs$ i jest krótszy niż w układzie bez tłumika $d_t = TODOs$ (patrz: Rys.\ref{fig:scope_without_silencer}.). Dysproporcja była powtarzalna dla każdego kształtu układu pomiarowego.
 
+\ident Patrząc dalej na te same próbki pomiarów można również dostrzec, że częstotliwość podstawowej harmonicznej sygnału ma bardzo zbliżoną wartość. Nie jest to przypadek. Dzieje się tak ponieważ jest to główna harmoniczna drgań własnych konstrukcji przetwornika. W tym konkretnym przypadku belki o długości $l = mmTODO$ i jednym punkcie mocowania. Projektując przetwornik naleźy zwrócić uwagę, aby odstroić drgania własne konstrukcji od drgań wymuszających. W innym przypadku uzyskamy szum informacyjny. Dalej ma to również wpływ na projektowanie elektronicznego układu przetwornika. W obwodach AC spodziewa się takich właśnie częstotliwości. W następnym akapicie \ref{sec:construction_optymization} mówi się również o zmianie częstotliwości, gdy konstrukcja jest belką o dwóch punktach podparcia.
 
+\ident Napięcie $V_{pp}$ wykazuje się niezmiennością w odniesieniu do przedstawionych zmian w konstrukcji. Jednak jest ono zależne od zupełnie innego parametru, od energii zderzenia. Jest ona bezpośrednią przyczyną ugięcia belki z przetwornikiem. Energia zderzenia, a dokładniej ta stracona, oraz czas kontaktu z belką stanowią ważne parametry dla przebiegu sygnału napięciowego przetwornika. Więcej o tym poruszono w akapicie \ref{sec:construction_optymization}.
+
+\begin{figure}[htbp]
+\centering
+\fbox{PRZEBIEG DLA PRÓBKI 1.2. }%\includegraphics[width=\linewidth]{sample}}
+\caption{Przykładowy przebieg pojedynczego sygnału dla próbki oznaczonej roboczo 1.2Acs15dt.}
+\label{fig:scope_without_silencer}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\fbox{PRZEBIEG DLA PRÓBKI 1.2. }%\includegraphics[width=\linewidth]{sample}}
+\caption{Przykładowy przebieg pojedynczego sygnału dla próbki oznaczonej roboczo 1.2Acf15dt.}
+\label{fig:scope_with_silencer}
+\end{figure}
