@@ -1,40 +1,67 @@
-\documentclass[9pt,twocolumn,twoside]{optica}
-\setboolean{shortarticle}{false}
-\setboolean{minireview}{false}
+%\author[1,*]{Jan Szymenderski}
+%\author[2,**]{Przemysław Sałapata}
+%
+%\affil[1]{Politechnika Poznańska, Wydział Elektryczny, pl. Marii Skłodowskiej-Curie 5, 60-965 Poznań}
+%\affil[*]{e-mail: jan.szymenderski@put.poznan.pl}
+%\affil[**]{e-mail: przemyslaw.salapata@student.put.poznan.pl}
 
+
+
+\documentclass{MSRarticle}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}%zmieniłem na utf8
+\usepackage{array}
+\usepackage{amstext}
+\usepackage{graphicx}
+\usepackage{esint}
+\usepackage{lettrine}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{balance}
 
 \usepackage{verbatim}
 \usepackage{smartdiagram}
 
-\title{Projektowanie geometrii sensorów piezoelektrycznych - elektryczna odpowiedź elemenu piezoelektrycznego na wymuszenie mechaniczne}%Licznik piezoelektryczny
+\DeclareCaptionLabelSeparator{hskip}{.\hskip 4px}
+\usepackage[figurename=Rys.\hskip -1.75px,labelsep=hskip ]{caption}
 
-\author[1,*]{Jan Szymenderski}
-\author[2,**]{Przemysław Sałapata}
+% Input the Heading information:
+\Journal{MEASUREMENT SCIENCE REVIEW, \textbf{19}, (2019), No.~x, p1--p2}
+\Doi{10.1515/msr-2019-00xx}
 
-\affil[1]{Politechnika Poznańska, Wydział Elektryczny, pl. Marii Skłodowskiej-Curie 5, 60-965 Poznań}
-%\affil[2]{School of Science, University of Technology, 2000 J St. NW, Washington DC, 20036, USA}
-%\affil[3]{School of Optics, University of Technology, 2000 J St. NW, Washington DC, 20036, USA}
+% !!! For PDF LaTeX use this version of the MSR HEAD:
+%\MSR_Head{MSRhead.pdf}
 
-\affil[*]{e-mail: jan.szymenderski@put.poznan.pl}
-\affil[**]{e-mail: przemyslaw.salapata@student.put.poznan.pl}
+% Otherwise (for laTeX using PostScript) use the default setup or use this:
+%\MSR_Head{MSRhead.eps} 
 
 
-% To be edited by editor
-% \dates{Compiled \today}
-
-%\ociscodes{(140.3490) Lasers, distributed feedback; (060.2420) Fibers, polarization-maintaining; (060.3735) Fiber Bragg gratings.}
-
-% To be edited by editor
-% \doi{\url{http://dx.doi.org/10.1364/optica.XX.XXXXXX}}
-
-\begin{abstract}
-Do napisania streszczenie artykułu.
-%Tutaj streszczenie
-\end{abstract}
-
-\setboolean{displaycopyright}{false} %wyśiwetla info o copywrithingu pod abstractem
+\setcounter{page}{101}
 
 \begin{document}
+
+\title{Projektowanie geometrii sensorów piezoelektrycznych - elektryczna odpowiedź elemenu piezoelektrycznego na wymuszenie mechaniczne }
+
+%\Subtitle{Short Communication}
+
+\author{Jan Szymenderski$^{1,2}$, Przemysław Sałapata$^{1,3}$}
+
+%\affil[1]{Politechnika Poznańska, Wydział Elektryczny, pl. Marii Skłodowskiej-Curie 5, 60-965 Poznań}
+%\affil[*]{e-mail: jan.szymenderski@put.poznan.pl}
+%\affil[**]{e-mail: przemyslaw.salapata@student.put.poznan.pl}
+
+\Address{$^{1}$Politechnika Poznańska, Wydział Elektryczny, pl. Marii Skłodowskiej-Curie 5, 60-965 Poznań,\\ \protect\href{mailto:jan.szymenderski@put.poznan.pl}{$^{2}$jan.szymenderski@put.poznan.pl}
+\\ \protect\href{mailto:przemyslaw.salaptata@student.put.poznan.pl}{$^{3}$przemyslaw.salaptata@student.put.poznan.pl}\\}
+
+%TODO
+\Abstract{Do napisania streszczenie artykułu.}
+%TODO
+%\begin{abstract}
+%Do napisania streszczenie artykułu.
+%%Tutaj streszczenie
+%\end{abstract}
+
+\Keywords{Magnetic measurement, imaging, magnetic susceptibility, calculation, microwave frequencies.}
 
 \maketitle
 
@@ -44,6 +71,7 @@ Do napisania streszczenie artykułu.
 \input{test_stand}
 \input{sensor_selection}
 \input{construction_optymization}
+
 %\section{Wyznaczenie charakterystyk}
 \input{conclusion}
 
@@ -57,8 +85,8 @@ Do napisania streszczenie artykułu.
 
 % Full bibliography will be added automatically on a new page for Optics Letters submissions. This command is ignored for journal article submissions.
 % Note that this extra page will not count against page length.
-\bibliographyfullrefs{sample}
-%\bibliographyfullrefs{achs_iechad_56_53}
+%\bibliographyfullrefs{sample}
+
 
 %Manual citation list
 %\begin{thebibliography}{1}

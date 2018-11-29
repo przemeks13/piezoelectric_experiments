@@ -1,0 +1,247 @@
+\documentclass[english]{MSRarticle}
+\usepackage[T1]{fontenc}
+\usepackage[cp1250]{inputenc}
+\usepackage{array}
+\usepackage{amstext}
+\usepackage{graphicx}
+\usepackage{esint}
+\usepackage{lettrine}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{balance}
+\DeclareCaptionLabelSeparator{hskip}{.\hskip 4px}
+\usepackage[figurename=Fig.\hskip -1.75px,labelsep=hskip ]{caption}
+
+% Input the Heading information:
+\Journal{MEASUREMENT SCIENCE REVIEW, \textbf{19}, (2019), No.~x, p1--p2}
+\Doi{10.1515/msr-2019-00xx}
+
+% !!! For PDF LaTeX use this version of the MSR HEAD:
+%\MSR_Head{MSRhead.pdf}
+
+% Otherwise (for laTeX using PostScript) use the default setup or use this:
+%\MSR_Head{MSRhead.eps} 
+
+
+\setcounter{page}{101}
+
+\begin{document}
+
+\title{\LaTeX\ Template for Preparation of Papers for Measurement Science \newline Review. On-line Journal -- Instructions for Papers Arrangement }
+
+%\Subtitle{Short Communication}
+
+\author{Forename Surname$^{1}$, Forename Surname$^{2}$, and Forename Surname$^{3}$}
+
+\Address{$^{1}$Institute, Department, Faculty, University, address street, No., ZIP, City, Country, \protect\href{mailto:author1@institution.edu}{author1@institution.edu}\\
+$^{2}$Institute of, Department of, Faculty of, University, address street, No., ZIP, City, Country\\
+$^{3}$Institute of, Department of, Faculty of, University, address street, No., ZIP, City, Country}
+
+\Abstract{These instructions give you guidelines for preparing papers for the MEASUREMENT SCIENCE REVIEW on-line journal. The body of the manuscript should be preceded by an Abstract limited to about 10 lines, followed by up to 6 keywords. The Abstract will be also published in the appropriate PAPER SECTION together with author's names and the paper title. Use this document as a template if you are using \LaTeX, and use this document as an instruction set. Define all symbols used in the abstract. Do not cite references in the abstract. Do not delete the blank line immediately above the abstract; it sets the footnote at the bottom of this column.}
+
+\Keywords{Magnetic measurement, imaging, magnetic susceptibility, calculation, microwave frequencies.}
+
+\maketitle
+
+\section{Introduction}
+\
+\indent
+This document is a template for \LaTeX{}. Please use the font size and the page setup as in this template.
+
+The topic of the article should be defined CLEARLY and short review of published essential solutions and comparison with the author's results should be given.
+
+
+\section{Subject \& Methods}
+\
+\indent
+Main ideas, theory, mathematical formulations, includes the data on the measuring method and instruments as well as experimental results. This part should be accompanied by exact references.
+
+Figures, see Fig.~1., (format .eps or .pdf, ... in line with text) and table files should be named following this convention: Fig.~1., Fig.~2., Fig.~3., Table~1., Table~2., etc.
+	
+	
+	\begin{figure}[hp]
+		\begin{center}
+		% \includegraphics[width = 0.9\columnwidth]{Fig1.pdf}
+		\includegraphics[width = 0.9\columnwidth]{Fig1.eps}
+		\end{center}
+		\caption{The designed structure based on ABC technology, very useful for applications in the industrial measurements.}
+		\label{fig:Fig1}
+	\end{figure}
+
+
+\section{Results}
+\
+\indent
+Results should be summarized briefly and main authors scientific contributions should be demonstrated.
+
+\medskip
+
+\begin{table}[hp]
+\begin{center}
+\caption{Chemical bonds associated with biological processes and their approximate energies [10].}
+\label{tab:Tab1}
+\begin{tabular}{|l|c|c|}
+\hline
+Bond					&	Energy [kJ/mol]	& Energy export x$10^{-19}$ [J] \\\hline
+Ionic					& ~700 						&		11.6 												\\\hline
+Covalent IV		& 1100 - 1300			& 15.5 - 17.8										\\\hline
+Covalent III	&	800 - 1000			& 13.3 - 16.6										\\\hline
+Covalent II		& 500 - 700				& 8.3 - 16.6										\\\hline
+Covalent I		& 300 - 500				& 4.98 - 8.3										\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+	
+
+\section{Discussion / conclusions}
+\
+\indent
+Presents a critical analysis, interpretation and evaluation of the obtained results.
+
+\subsection{References}
+\
+\indent
+For preparation of the references use bibtex. Otherwise, number citations consecutively in square brackets [1]. The sentence punctuation follows the brackets [2]. Multiple references [2], [3] are each numbered with separate brackets [1]-[3]. When citing a section in a book, please give the relevant page numbers [2]. In sentences, refer simply to the reference number, as in [3]. Do not use ,,Ref. [3]'' or ,,reference [3]'' except at the beginning of a sentence: ,,Reference [3] shows ... .''
+
+\subsection{Equations}
+\
+\indent
+Use standard \LaTeX\  equations. If you are using Word, use either the Microsoft Equation Editor or the MathType add-on (http://www.mathtype.com) for equations in your paper (Insert > Objects > Create New > Microsoft Equation > or MathType Equation). ,,Float over text'' should not be selected.
+
+Number equations consecutively with equation numbers in parentheses flush with the right margin, as in (1). First use the equation editor to create the equation. Then select the ,,Equation'' markup style. Press the tab key and write the equation number in parentheses.
+\begin{equation}
+	\frac{f_{OS}}{2^L} = f^s > f_{\max} \Rightarrow E_{kv} = \frac{Q}{\sqrt{12}\sqrt{2^L}}
+\end{equation}
+
+Be sure that the symbols in your equation have been defined before the equation appears or immediately following. Refer to ,,(1)'', not ,,Eq. (1)'' or ,,equation (1)'', except at the beginning of a sentence: ,,Equation (1) is ... .''
+
+
+\section{Editorial policy}
+\
+\indent
+At least two favorable reviews are required for a paper to be accepted for publication. For regular papers, the editors additionally make a determination of suitability, which is different from a judgment of whether a paper is sound or flawed. The editors consider whether a paper contributes significant new material, is within the scope of the journal, or is more suited to another journal. \textbf{Unreadable English is a valid reason for rejection}. Authors of rejected papers may revise and resubmit them to the MSR as regular papers, whereupon they will be reviewed by two new referees.
+
+\section{Publication principles}
+\
+\indent
+The MSR is a peer-reviewed, archival journal in science and technology related to the theory of measurement, measurement of physical quantities and measurement in biomedicine.
+
+The paper must have a character of a basic scientific research paper in the ,,\underline{Measurement Science}'' sphere, (new theory, analysis, synthesis, modeling, new measurement method, new sensors, data processing, data interpretation, graphical evaluation, \underline{new results} \dots).
+
+
+Authors should consider the following points:
+\begin{enumerate}
+	\item 
+	Technical papers submitted for publication must advance the state of knowledge and \textbf{must cite relevant prior work}.
+	
+	\item 
+	The length of a submitted paper should be commensurate with the importance, or appropriate to the complexity, of the work, \textbf{maximum 10 pages}. \textbf{Abstract} limited to \textbf{10 lines}.
+	
+	\item 
+	Authors must convince both peer reviewers and the editors of the scientific and technical merit of a paper; the standards of proof are higher when \textbf{extraordinary or unexpected results are reported}.
+	
+	\item 
+	Papers are published proportional to the chronological sequence and according to the scientific quality of papers.
+\end{enumerate}
+
+\section{Conclusions}
+\
+\indent
+Conclusion may review the main points of the paper, \textbf{do not replicate the abstract in the conclusion}. A conclusion might elaborate on the \textbf{importance of the work} or suggest applications and extensions.
+
+\section*{Appendix}
+\
+\indent
+Appendixes, if needed, must appear before the acknowledgement.
+
+\section*{Acknowledgement}
+\
+\indent
+Use the singular heading even if you have many acknowledgments.
+
+
+% BIBLIOGRAPHY / REFERENCES
+
+% Use the MSRarticle bibliographystyle MSRarticle.bst or
+% \bibliographystyle{MSRarticle}
+% \bibliography{MSRTemplate_2018}
+
+% Alternatively, use the direct input of the references 
+% according to the rules given by http://www.measurement.sk/References.htm
+
+% EXAMPLE of References
+\begin{thebibliography}{00}
+
+\bibitem{Cudak2006_Journal-Article}
+Cudak, M., Karcz, J. (2006). 
+\newblock Momentum transfer in an agitated vessel with off-centered impellers. 
+\newblock \emph{Chemical Letters}, 60 (5), 375--380. 
+
+%%%%%%%%%%%% BALANCE
+\balance 
+
+
+\bibitem{1}
+Stein, G.J., Chm{\'u}rny, R., Rosík, V. (2011). Compact vibration measuring system for in-vehicle applications. \emph{Measurement Science Review}, 11 (5), 154-159.
+
+\bibitem{2}
+Kleiner, F.S., Mamiya C.J. \& Tansey R.G. (2001). \emph{Gardner's art through the ages} (11th ed.). Fort Worth, USA: Harcourt College Publishers.
+
+\bibitem{3}
+Field, G. (2001). Rethinking reference rethought. In Revelling in Reference: Reference and Information Services Section Symposium, 12-14 October 2001 (pp. 59-64). Melbourne, Victoria, Australia: Australian Library and Information Association.
+
+\bibitem{4}
+Johnson,  A.  (2000).  \emph{Abstract Computing  Machines}. Springer   Berlin  Heidelberg.   Retrieved   March   30, 2006, from SpringerLink \url{http://springerlink.com/content/w25154}.
+
+\bibitem{5}
+Begg, M.M. (2001). \emph{Dairy farm women in the Waikato 1946-1996: Fifty years of social and structural change}. Unpublished doctoral dissertation, University of Waikato, Hamilton, New Zealand.
+
+\bibitem{6}
+Osgood, D.W., \& Wilson, J. K. (1990). \emph{Covariation of adolescent health problems}. Lincoln: University of Nebraska. (NTIS No. PB 91-154 377/AS)
+
+\bibitem{7}
+Ministerial Council on Drug Strategy. (1997). \emph{The national drug strategy: Mapping the future}. Canberra: Australian Government Publishing Service.
+
+\bibitem{8}
+Cudak, M. \& Karcz J. (2006). Momentum transfer in an agitated vessel with off-centred impellers. \emph{Chemical Papers}, 60(5), 375-380.
+
+\bibitem{9}
+Czajgucki Z., Zimecki M. \& Andruszkiewicz R. (2006, December). The immunoregulatory effects of edeine analogues in mice [Abstract]. \emph{Cellular \& Molecular Biology Letters} 12(3), 149-161. Retrieved December 6, 2006,  from PubMed database on the World Wide Web: http://www.pubmed.gov.
+
+\bibitem{10}
+Amazing Amazon region. (1989, January 12). New York Times, p. D11.
+
+\bibitem{11}
+Bergmann, P.G. (1993). Relativity. In The new encyclopedia Britannica (Vol. 26, pp. 501- 508). Chicago: Encyclopedia Britannica.
+
+\end{thebibliography}
+
+%\begin{flushright}
+%Received XXXXX 15, 2019. \\
+%Accepted XXXXX 25, 2019.
+%\end{flushright}
+
+
+
+\begin{table*}
+	\begin{center}
+	\textbf{More about references you will find here:}
+
+ \url{http://www.measurement.sk/Instructions.htm}
+
+	{In order to speed up the review process it is recommended to propose several reviewers (NOT from a country of authors) for every submitted paper:}\\
+		
+	\begin{tabular*}{\textwidth}{ | p{1cm} |p{5cm}| p{5cm}| p{5cm} | }
+		\hline
+	   & Name, surname, titles:  &  Affiliation, institute, address: &   e-mail address: \\\hline 
+  1. &  &   &   \\\hline 
+	2. &  &   &   \\\hline 
+	3. &  &   &   \\\hline 
+	4. &  &   &   \\\hline 
+	\end{tabular*}
+	\end{center}
+\end{table*}
+
+
+
+\end{document}
