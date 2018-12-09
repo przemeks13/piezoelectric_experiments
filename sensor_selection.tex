@@ -1,7 +1,9 @@
 %sekcja wyboru czujnika piezo
 \section{Selekcja czujnika}
 \label{sec:sensor_selection}
-Równolegle z pracami nad stanowiskiem badawczym przeprowadzono przegląd dostępnych na rynku przetworników piezoelektrycznych. Uwagę skoncentrowano przede wszystkim na przetwornikach PVDF\cite{PVDF:15}\footnote{Polifluorek winylidenu - materiał piezoelektryczny charakteryzujący się elastycznością.} Do badań wybrano 6 konkretnych produktów (patrz: Rys.\ref{fig:sensors}.):
+Równolegle z pracami nad stanowiskiem badawczym przeprowadzono przegląd dostępnych na rynku przetworników piezoelektrycznych. Uwagę skoncentrowano przede wszystkim na przetwornikach PVDF\cite{PVDF:15}
+%\footnote{Polifluorek winylidenu - materiał piezoelektryczny charakteryzujący się elastycznością.} 
+Do badań wybrano 6 konkretnych produktów (patrz: Rys.\ref{fig:sensors}.):
 
 \begin{enumerate}
 \item Czujnik TODO
@@ -15,7 +17,7 @@ Równolegle z pracami nad stanowiskiem badawczym przeprowadzono przegląd dostę
 
 \begin{figure}[htbp]
 \centering
-\fbox{TUTAJ ZDJĘCIE CZUJNIKÓW}%\includegraphics[width=\linewidth]{sample}}
+\fbox{\includegraphics[width=\linewidth]{pictures/sensors.jpg}}
 \caption{Badane przetworniki piezoelektryczne.}
 \label{fig:sensors}
 \end{figure}
@@ -37,9 +39,70 @@ Dla uzyskania szerszego spektrum danych dla każdego czujniaka powtarzano poamia
 Dla każdego pomiaru przeprowadzono po 10 prób, i pozwoliło to zebrać poniższe wyniki. Parametry, jakie wzięto pod uwagę przy ocenie jakości sygnału, to czas trwania ( od inicjalizacji do wygaszenia ) oraz wartość napięcia międzyszczytowego oznaczanych dalej odpowiednio $t_d$ i $V_{pp}$. Ich porównanie po statystycznej analizie przedstawiono na Rys.\ref{fig:sensor_statistic}. Trzeci niebieski słupek w skali od $0\div5$ oznacza subiektywną ocenę poziomu zniekształcenia otrzymanego sygnału. Podczas badań zwracano również uwagę na sposób przyklejenia przetwornika do plastikowego płaskownika tak, aby nie fałszowało to przeprowadzanych pomiarów. 
 %TODO Tu przydałby się rozkład widmowy sygnału
 
+
+
 \begin{figure}[htbp]
 \centering
-\fbox{TUTAJ WYKRES PORÓWNAWCZY SYGNAŁÓW }%\includegraphics[width=\linewidth]{sample}}
+%\fbox{TUTAJ WYKRES PORÓWNAWCZY SYGNAŁÓW }%\includegraphics[width=\linewidth]{sample}}
+
+\pgfplotstableread[col sep=comma]{selekcja_czujnika.csv}\datatable
+\begin{tikzpicture}
+    \begin{axis}[
+            ybar,
+            bar width=.05cm,
+            width=0.5\textwidth,
+            height=.5\textwidth,
+            legend style={at={(0.5,1)},
+                anchor=north,legend columns=-1},
+%
+          xtick=data,
+          xticklabels from table={\datatable}{probka},
+          xticklabel style={rotate=60, font=\scriptsize},
+          yticklabel style={font=\scriptsize},
+            nodes near coords,
+%            nodes near coords align={vertical},
+            nodes near coords style={rotate=90, font=\scriptsize, anchor=west},
+            ymin=0,ymax=50,
+            xlabel style={at={(0,0.05)}, font=\scriptsize},
+            ylabel style={font=\scriptsize},
+            xlabel={próbka},
+            ylabel={$vpp[V]$, $td[ms]$},
+        ]
+        \addplot table[x expr=\coordindex,y=vpp, col sep=comma]{selekcja_czujnika.csv};
+        \addplot table[x expr=\coordindex,y=dt, col sep=comma]{selekcja_czujnika.csv};
+        \end{axis}
+        \begin{axis}[
+            axis y line*=right,
+            axis x line=none,
+            ybar,
+            bar width=.05cm,
+            width=0.5\textwidth,
+            height=.5\textwidth,
+            legend style={at={(0.5,1)},
+                anchor=north,legend columns=-1},
+%
+          xtick=data,
+          xticklabels from table={\datatable}{probka},
+          xticklabel=none,% style={rotate=60, font=\scriptsize},
+          yticklabel style={font=\scriptsize},
+            nodes near coords,
+%            nodes near coords align={vertical},
+            nodes near coords style={rotate=90, font=\scriptsize, anchor=west},
+            ymin=0,ymax=5,
+            %xlabel style={at={(0,0.05)}, font=\scriptsize},
+            ylabel style={font=\scriptsize},
+            %xlabel={próbka},
+            %ylabel={$vpp[V]$, $td[ms]$},
+        ]
+        \addplot table[x expr=\coordindex,y=jakość, col sep=comma]{selekcja_czujnika.csv};
+%%        \addplot table[x=interval,y=carD]{\mydata};
+%%        \addplot table[x=interval,y=carR]{\mydata};
+%%        \legend{Trips, Distance, Energy}
+    \end{axis}
+%\caption{Zestawienie parametrów sygnałów dla poszczególnych czujników.}
+%\label{fig:sensor_statistic}
+\end{tikzpicture}
+
 \caption{Zestawienie parametrów sygnałów dla poszczególnych czujników.}
 \label{fig:sensor_statistic}
 \end{figure}
@@ -54,14 +117,14 @@ Napięcie $V_{pp}$ wykazuje się niezmiennością w odniesieniu do przedstawiony
 
 \begin{figure}[htbp]
 \centering
-\fbox{PRZEBIEG DLA PRÓBKI 1.2. }%\includegraphics[width=\linewidth]{sample}}
-\caption{Przykładowy przebieg pojedynczego sygnału dla próbki oznaczonej roboczo 1.2Acs15dt.}
+\fbox{\includegraphics[width=\linewidth]{pictures/1Acs15dt.jpg}}
+\caption{Przykładowy przebieg pojedynczego sygnału dla próbki oznaczonej 1.1Acs15dt.}
 \label{fig:scope_without_silencer}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\fbox{PRZEBIEG DLA PRÓBKI 1.2. }%\includegraphics[width=\linewidth]{sample}}
-\caption{Przykładowy przebieg pojedynczego sygnału dla próbki oznaczonej roboczo 1.2Acf15dt.}
+\fbox{\includegraphics[width=\linewidth]{pictures/1Acf15dt.jpg}}
+\caption{Przykładowy przebieg pojedynczego sygnału dla próbki oznaczonej 1.1Acf15dt.}
 \label{fig:scope_with_silencer}
 \end{figure}
