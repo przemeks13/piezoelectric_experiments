@@ -55,16 +55,81 @@ E_s = E_p = k \cdot x^2
 
 \begin{figure}[htbp]
 \centering
-\fbox{\includegraphics[width=\linewidth]{pictures/lab_stand.jpg}}
+%\fbox{
+\includegraphics[width=\linewidth]{pictures/lab_stand.jpg}
+%}
 \caption{Realizacja stanowiska badawczego.}
 \label{fig:test_stand_photo}
 \end{figure}
 
 Tak skonstruowane stanowisko pozwoliło uzyskać charakterystyki mechaniczne $E(x)$ i $p(x)$ przedstawione na Rys.\ref{fig:mech_char}. Gdyby wziąć pod uwagę możliwość wymiany sprężyny oraz elementu wprawianego w ruch otrzymanoby całą rodzinę charakterystyk, a przez to większą uniwersalność urządzenia.
 
+\pgfplotsset{width=\linewidth,compat=1.3}
+
+
+
 \begin{figure}[htbp]
 \centering
-\fbox{CHARAKTERYSTYKA}%\includegraphics[width=\linewidth]{sample}}
+    \begin{tikzpicture}
+%    \pgfplotsset{
+%    scale only axis,
+%    scaled x ticks=base 10:3,
+%    xmin=0, xmax=0.06
+%}
+      \begin{axis}[
+          width=\linewidth, % Scale the plot to \linewidth
+          grid=major, % Display a grid
+          grid style={dashed,gray!30}, % Set the style
+          xlabel=${\delta}x$ , % Set the labels
+          ylabel=$E_k$,
+          x unit=\si{\milli\metre}, % Set the respective units
+          y unit=\si{\milli\joule},
+          legend style={at={(0.5,-0.2)},anchor=north}, % Put the legend below the plot
+          %x tick label style={rotate=90,anchor=east} % Display labels sideways
+        ]
+        \addplot[smooth,mark=*,blue] table[x=x,y=E-W,col sep=comma] {pomiary.csv};
+        \label{plot_two}
+        \addlegendentry{plot 2}
+        \end{axis}
+
+
+        \begin{axis}[
+          axis y line*=right,
+          axis x line=none,
+          width=\linewidth, 
+          ylabel=$p$,
+          y unit=\si{\k\g\m\per\square\s},
+        ] 
+        \addlegendimage{/pgfplots/refstyle=plot_one}\addlegendentry{plot 1}
+        \addplot[smooth,mark=x,red] table[x=x,y=p,col sep=comma] {pomiary.csv};
+        \addlegendentry{plot 3} 
+%        \legend{Plot, Plot2}
+      \end{axis}
+    
+%      \begin{axis}[
+%          width=\linewidth, % Scale the plot to \linewidth
+%          grid=major, % Display a grid
+%          grid style={dashed,gray!30}, % Set the style
+%          xlabel=${\delta}x$ , % Set the labels
+%          ylabel=$E_k$,
+%          x unit=\si{\milli\metre}, % Set the respective units
+%          y unit=\si{\milli\joule},
+%          legend style={at={(0.5,-0.2)},anchor=north}, % Put the legend below the plot
+%          %x tick label style={rotate=90,anchor=east} % Display labels sideways
+%        ]
+%        \addplot table[x=x,y=E-W,col sep=comma] {pomiary.csv};
+%        \end{axis}
+%        \begin{axis}[
+%          axis y line*=right,
+%          axis x line=none,
+%          width=\linewidth, 
+%          ylabel=$p$,
+%          %y unit=\si{\k\g\m\per\square\s},
+%        ] 
+%        \addplot table[x=x,y=p,col sep=comma] {pomiary.csv}; 
+%%        \legend{Plot, Plot2}
+%      \end{axis}
+    \end{tikzpicture}
 \caption{Charakterystyka mechaniczna stanowiska badawczego.}
 \label{fig:mech_char}
 \end{figure}
